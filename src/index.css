@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #8ecfff;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar_custom {
+  background-color: white;
+}
+
+.first_screen {
+  background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url("https://reutbas.ru/upload/uf/f7c/p6p27xptswyisgb755awyuk92ism5q9t.png");
+  background-size: cover;
+  background-position: center;
+}
