@@ -41,11 +41,11 @@ bash
 Copy code
 # С использованием npm
 ```bash
-npm start
+npm run dev
 ```
 # Или с использованием yarn
 ```bash
-yarn start
+yarn run dev
 ```
 
 Откройте http://localhost:5173/ в вашем браузере, чтобы увидеть проект.
