@@ -16,7 +16,7 @@
 ### 1. Клонируйте репозиторий
 
 ```bash
-https://github.com/whitemam8a/SIA-BaKA-RiNi-swimming-school.git
+git clone https://github.com/whitemam8a/SIA-BaKA-RiNi-swimming-school.git
 cd ваш-проект
 ```
 
