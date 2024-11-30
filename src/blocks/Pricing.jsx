@@ -8,7 +8,7 @@ const Pricing = () => {
       id="pricing"
     >
       <strong className="text-4xl font-extrabold ">Наши тарифы</strong>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <Card
           image={
             "https://fitnessacademy.com.ua/wp-content/uploads/2018/11/kak-nauchit-rebenka-plavat.jpg"

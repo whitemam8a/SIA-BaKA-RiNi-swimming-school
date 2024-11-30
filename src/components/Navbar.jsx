@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="navbar bg-base-100 navbar_custom">
+    <div className="navbar navbar_custom">
       <div className="flex-1">
         <a className="btn btn-ghost text-xl">SIA Baka RiNi</a>
       </div>
@@ -58,7 +58,7 @@ const Navbar = () => {
         {isOpen && (
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0 lg:right-auto"
+            className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0 lg:right-auto"
           >
             <li>
               <a href="#">Главная</a>
