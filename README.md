@@ -1,8 +1,33 @@
-# React + Vite
+# React Project with Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот проект создан на React и использует библиотеку Tailwind CSS для стилизации.
 
-Currently, two official plugins are available:
+## 📋 Предварительные требования
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Перед началом убедитесь, что у вас установлены:
+
+- [Node.js](https://nodejs.org/) (версия >= 14.0.0)
+- [npm](https://www.npmjs.com/) или [yarn](https://yarnpkg.com/)
+
+## 🚀 Установка и запуск
+
+Следуйте этим шагам для запуска проекта локально:
+
+### 1. Клонируйте репозиторий
+
+```bash
+git clone https://github.com/ваш-аккаунт/ваш-проект.git
+cd ваш-проект
+```
+
+<strong>2 Установите зависимости<strong/>
+Используйте npm или yarn для установки всех необходимых пакетов:
+
+bash
+Copy code
+# С использованием npm
+```npm install```
+
+# Или с использованием yarn
+```yarn install```
+
