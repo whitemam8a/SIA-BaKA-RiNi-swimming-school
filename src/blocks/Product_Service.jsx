@@ -3,7 +3,7 @@ import React from "react";
 const Product_Service = () => {
   return (
     <div className="flex flex-col items-center mx-5 py-16" id="products">
-      <strong className="text-3xl font-extrabold mb-6">Наши Услуги</strong>
+      <h2 className="text-3xl font-extrabold mb-6">Наши Услуги</h2>
       <ol className="list-decimal text-xl text-gray-800 pl-5 space-y-4 max-w-4xl w-full">
         <li className="transition-colors">
           <span className="font-semibold">

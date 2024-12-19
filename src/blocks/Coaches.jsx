@@ -4,7 +4,7 @@ import CardCoach from "../components/CardCoach";
 const Coaches = () => {
   return (
     <div className="flex flex-col items-center gap-12 py-16 px-5" id="coaches">
-      <strong className="text-3xl font-extrabold">Наши тренеры</strong>
+      <h2 className="text-3xl font-extrabold">Наши тренеры</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full gap-6">
         <CardCoach
           image={

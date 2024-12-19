@@ -36,7 +36,7 @@ const Features = () => {
       className="flex flex-col items-center gap-12 py-16 px-5 bg-gray-50"
       id="features"
     >
-      <strong className="text-3xl font-extrabold ">Почему Мы?</strong>
+      <h2 className="text-3xl font-extrabold ">Почему Мы?</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         <CardFeatures
           logo={<CupIcon size={40} className="text-indigo-600" />}

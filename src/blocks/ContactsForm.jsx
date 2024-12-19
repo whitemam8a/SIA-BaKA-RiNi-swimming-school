@@ -7,7 +7,7 @@ const ContactsForm = () => {
       <h2 className="text-3xl font-extrabold text-gray-800 mb-8">
         Записаться на первое занятие
       </h2>
-      <div className="w-full">
+      <div className="w-full md:w-[500px] lg:w-[600px]">
         {/* Contacts */}
         <Contact_form button="Записаться" />
       </div>

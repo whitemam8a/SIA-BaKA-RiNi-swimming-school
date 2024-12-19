@@ -57,17 +57,17 @@ const Contact_form = ({ button }) => {
     <>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          {/* <label
-          htmlFor="name"
-          className="block text-lg font-medium text-gray-700"
-        >
-          Имя
-        </label> */}
+          <label
+            htmlFor="name"
+            className="block text-lg font-medium text-gray-700"
+          >
+            Имя
+          </label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Name"
+            placeholder="Имя"
             value={formData.name}
             onChange={handleChange}
             required
@@ -76,12 +76,12 @@ const Contact_form = ({ button }) => {
         </div>
 
         <div>
-          {/* <label
-          htmlFor="email"
-          className="block text-lg font-medium text-gray-700"
-        >
-          Email
-        </label> */}
+          <label
+            htmlFor="email"
+            className="block text-lg font-medium text-gray-700"
+          >
+            Email
+          </label>
           <input
             type="email"
             id="email"
@@ -95,17 +95,17 @@ const Contact_form = ({ button }) => {
         </div>
 
         <div>
-          {/* <label
-          htmlFor="phone"
-          className="block text-lg font-medium text-gray-700"
-        >
-          Телефон
-        </label> */}
+          <label
+            htmlFor="phone"
+            className="block text-lg font-medium text-gray-700"
+          >
+            Телефон
+          </label>
           <input
             type="tel"
             id="phone"
             name="phone"
-            placeholder="Phone"
+            placeholder="Телефон"
             value={formData.phone}
             onChange={handleChange}
             required
@@ -114,18 +114,18 @@ const Contact_form = ({ button }) => {
         </div>
 
         <div>
-          {/* <label
-          htmlFor="message"
-          className="block text-lg font-medium text-gray-700"
-        >
-          Сообщение
-        </label> */}
+          <label
+            htmlFor="message"
+            className="block text-lg font-medium text-gray-700"
+          >
+            Сообщение
+          </label>
           <textarea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Message"
+            placeholder="Сообщение"
             required
             rows="4"
             className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm bg-white text-black focus:outline-none focus:ring-2"

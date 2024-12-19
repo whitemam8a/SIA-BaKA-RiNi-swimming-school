@@ -7,7 +7,7 @@ const Pricing = () => {
       className="flex flex-col items-center gap-12 px-5 py-16 bg-gray-50"
       id="pricing"
     >
-      <strong className="text-4xl font-extrabold ">Наши тарифы</strong>
+      <h2 className="text-4xl font-extrabold ">Наши тарифы</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <Card
           image={
