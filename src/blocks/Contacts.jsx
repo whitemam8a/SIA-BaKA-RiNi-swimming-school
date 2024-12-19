@@ -2,6 +2,7 @@ import React from "react";
 import { FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
+import Contact_form from "../components/ContactForm/Contact_from";
 
 const Contacts = () => {
   return (
@@ -51,7 +52,7 @@ const Contacts = () => {
       {/* Контакты */}
       <div className="flex-1 flex flex-col gap-4">
         <h2 className="text-3xl font-bold text-gray-800">Контакты</h2>
-        <p className="text-gray-600">Свяжитесь с нами:</p>
+        <p className="text-gray-800">Свяжитесь с нами:</p>
         <ul className="space-y-2">
           <li>
             <a
@@ -91,7 +92,6 @@ const Contacts = () => {
           </li>
         </ul>
       </div>
-
       {/* Карта */}
       <div className="flex-1 shadow-lg rounded-lg overflow-hidden">
         <iframe

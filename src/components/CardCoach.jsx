@@ -1,12 +1,12 @@
 import React from "react";
 
-const CardCoach = ({ image, name, description }) => {
+const CardCoach = ({ image, imgAlt, name, description }) => {
   return (
     <div className="card bg-sky-100 mx-3 shadow-xl overflow-hidden">
       <figure className="bg-white w-full h-64">
         <img
           src={image}
-          alt="coach"
+          alt={imgAlt}
           className="w-full h-full object-cover object-top"
         />
       </figure>

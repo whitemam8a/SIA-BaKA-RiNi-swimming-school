@@ -6,6 +6,7 @@ import Pricing from "./blocks/Pricing";
 import Features from "./blocks/Features";
 import Coaches from "./blocks/Coaches";
 import FAQ from "./blocks/FAQ";
+import ContactsForm from "./blocks/ContactsForm";
 import Contacts from "./blocks/Contacts";
 
 const App = () => {
@@ -24,6 +25,8 @@ const App = () => {
       <Coaches />
       {/* FAQ */}
       <FAQ />
+      {/* Contact Form */}
+      <ContactsForm />
       {/* Contacts */}
       <Contacts />
     </>

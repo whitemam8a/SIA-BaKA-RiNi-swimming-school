@@ -6,7 +6,7 @@ const CardFeatures = ({ logo, title, description }) => {
       <div className="flex justify-center p-4">{logo}</div>
       <div className="px-6 py-4 ">
         <h2 className="text-xl font-bold text-center mb-4">{title}</h2>
-        <p className="text-gray-700 text-base text-justify">{description}</p>
+        <p className="text-gray-700 text-base ">{description}</p>
       </div>
     </div>
   );

@@ -13,6 +13,7 @@ const Pricing = () => {
           image={
             "https://fitnessacademy.com.ua/wp-content/uploads/2018/11/kak-nauchit-rebenka-plavat.jpg"
           }
+          imgAlt={"3 babies swimming in the pool"}
           title={"Малыши"}
           description={"Возраст от 1,5 до 2 лет"}
           price={"100"}
@@ -21,6 +22,7 @@ const Pricing = () => {
           image={
             "https://static.tildacdn.com/tild6464-3261-4433-b062-383737656434/grudnichkovoe-i-dets.jpg"
           }
+          imgAlt={"4 kids looking at the camera at the beachside bessin."}
           title={"Групповые занятия"}
           description={"Группы до 7 человек, возраст с 4 лет"}
           price={"100"}
@@ -29,6 +31,7 @@ const Pricing = () => {
           image={
             "https://splash-school.com/wp-content/uploads/2021/10/img_1411.jpg"
           }
+          imgAlt={"the coach is explaining a task to a child by the pool "}
           title={"Индивидуальные занятия"}
           description={"Возраст любой"}
           price={"150"}
@@ -36,6 +39,9 @@ const Pricing = () => {
         <Card
           image={
             "https://moysport.in/wp-content/uploads/2019/09/irfssqge-hy.jpg"
+          }
+          imgAlt={
+            "coach explains swimming technique to a teenager by the pool "
           }
           title={"Индивидуальные занятия"}
           description={"Возраст любой"}
