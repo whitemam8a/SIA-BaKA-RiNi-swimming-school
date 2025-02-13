@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "main": "Main",
+    "advantages": "Advantages",
+    "services": "Services",
+    "prices": "Prices",
+    "coaches": "Coaches",
+    "contacts": "Contacts"
+  }
+}

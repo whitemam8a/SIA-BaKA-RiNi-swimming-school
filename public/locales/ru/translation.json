@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "main": "Главная",
+    "advantages": "Преимущества",
+    "services": "Услуги",
+    "prices": "Цены",
+    "coaches": "Тренеры",
+    "contacts": "Контакты"
+  }
+}

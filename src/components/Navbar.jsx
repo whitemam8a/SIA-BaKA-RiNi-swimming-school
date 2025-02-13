@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -12,25 +14,25 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a href="#">Главная</a>
+              <a href="#">{t("navbar.main")}</a>
             </li>
             <li>
-              <a href="#features">Преимущества</a>
+              <a href="#features">{t("navbar.advantages")}</a>
             </li>
             <li>
-              <a href="#products">Услуги</a>
+              <a href="#products">{t("navbar.services")}</a>
             </li>
             <li>
-              <a href="#pricing">Цены</a>
+              <a href="#pricing">{t("navbar.prices")}</a>
             </li>
             <li>
-              <a href="#coaches">Тренеры</a>
+              <a href="#coaches">{t("navbar.coaches")}</a>
             </li>
             <li>
               <a href="#FAQ">FAQ</a>
             </li>
             <li>
-              <a href="#contacts">Контакты</a>
+              <a href="#contacts">{t("navbar.contacts")}</a>
             </li>
           </ul>
         </div>
@@ -62,25 +64,25 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0 lg:right-auto"
             >
               <li>
-                <a href="#">Главная</a>
+                <a href="#">{t("navbar.main")}</a>
               </li>
               <li>
-                <a href="#features">Преимущества</a>
+                <a href="#features">{t("navbar.advantages")}</a>
               </li>
               <li>
-                <a href="#products">Услуги</a>
+                <a href="#products">{t("navbar.services")}</a>
               </li>
               <li>
-                <a href="#pricing">Цены</a>
+                <a href="#pricing">{t("navbar.prices")}</a>
               </li>
               <li>
-                <a href="#coaches">Тренеры</a>
+                <a href="#coaches">{t("navbar.coaches")}</a>
               </li>
               <li>
                 <a href="#FAQ">FAQ</a>
               </li>
               <li>
-                <a href="#contacts">Контакты</a>
+                <a href="#contacts">{t("navbar.contacts")}</a>
               </li>
             </ul>
           )}
