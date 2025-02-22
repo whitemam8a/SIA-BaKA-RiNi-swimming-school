@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useTranslation } from "react-i18next";
 
 const Contact_form = ({ button }) => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -61,13 +63,13 @@ const Contact_form = ({ button }) => {
             htmlFor="name"
             className="block text-lg font-medium text-gray-700"
           >
-            Имя
+            {t("contact_form.name")}
           </label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Имя"
+            placeholder={t("contact_form.name")}
             value={formData.name}
             onChange={handleChange}
             required
@@ -99,13 +101,13 @@ const Contact_form = ({ button }) => {
             htmlFor="phone"
             className="block text-lg font-medium text-gray-700"
           >
-            Телефон
+            {t("contact_form.name")}
           </label>
           <input
             type="tel"
             id="phone"
             name="phone"
-            placeholder="Телефон"
+            placeholder={t("contact_form.name")}
             value={formData.phone}
             onChange={handleChange}
             required
@@ -118,14 +120,14 @@ const Contact_form = ({ button }) => {
             htmlFor="message"
             className="block text-lg font-medium text-gray-700"
           >
-            Сообщение
+            {t("contact_form.message")}
           </label>
           <textarea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Сообщение"
+            placeholder={t("contact_form.message")}
             required
             rows="4"
             className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm bg-white text-black focus:outline-none focus:ring-2"

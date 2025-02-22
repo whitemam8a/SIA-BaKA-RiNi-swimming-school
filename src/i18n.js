@@ -11,20 +11,11 @@ i18n
     fallbackLng: "en",
     debug: false,
     interpolation: {
-      escapeValue: false,
+      escapeValue: true,
     },
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json",
     },
-    // resources: {
-    //   en: {
-    //     translation: {
-    //       navbar: {
-    //         main: "Main (from config)",
-    //       },
-    //     },
-    //   },
-    // },
   });
 
 export default i18n;

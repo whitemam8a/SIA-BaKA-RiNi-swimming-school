@@ -6,5 +6,81 @@
     "prices": "Prices",
     "coaches": "Coaches",
     "contacts": "Contacts"
+  },
+  "first_screen": {
+    "title": "First Steps into the World of Swimming",
+    "subtitle": "Sign up your child for the first lesson and unlock their potential in the water with a <1>50% discount</1>",
+    "button": "Sign up for a trial lesson -50%"
+  },
+  "features": {
+    "why_we": "Why Us?",
+    "1_card": {
+      "title": "Member of the Latvian Swimming Union",
+      "description": "By joining our club, your child will have the opportunity to represent our school in swimming competitions."
+    },
+    "2_card": {
+      "title": "Your Lessons Won't Be Lost",
+      "description": "We value your time and want to ensure that no lesson goes to waste due to illness. If your child is unable to attend a lesson, we offer a free opportunity to join another group session."
+    },
+    "3_card": {
+      "title": "Convenient Schedule",
+      "description": "We understand that your schedule can be busy. That’s why we offer flexible class times to suit your needs."
+    }
+  },
+  "product_sevices": {
+    "our_product": "Our Services",
+    "1_product": "<1>Baby classes (from 1.5 to 2 years old)</1> – lessons created for the youngest, helping early adaptation to water, developing coordination and motor skills, and bringing joy from the first dives.",
+    "2_product": "<1>Group lessons for children (from 2 to 5 years old)</1> – fun and engaging workouts in small groups, where kids learn the basics of swimming, strengthen their health, and make new friends.",
+    "3_product": "<1>Individual lessons</1> – a personalized approach to each child, allowing for quicker mastery of swimming techniques and gaining confidence in the water.",
+    "4_product": "<1>Sports swimming preparation (from 5 years old)</1> – training for those who want to achieve high results. The lessons include learning the technique of competitive swimming styles and developing endurance."
+  },
+  "pricing": {
+    "pricing": "Our Rates",
+    "1_card": {
+      "title": "Toddlers",
+      "description": "Ages 1.5 to 2 years",
+      "price": "100"
+    },
+    "2_card": {
+      "title": "Group Lessons",
+      "description": "Groups up to 7 people, ages 4 and up",
+      "price": "100"
+    },
+    "3_card": {
+      "title": "Private Lessons",
+      "description": "Any age",
+      "price": "150"
+    },
+    "4_card": {
+      "title": "Private Lessons",
+      "description": "Any age",
+      "price": "200"
+    }
+  },
+  "coaches": "empty",
+  "faq": {
+    "faq": "FAQ",
+    "1_question": {
+      "question": "About the School",
+      "answer": "Our children's swimming school is a place where kids learn to feel confident in the water, develop physical fitness, and enjoy an active lifestyle. We create a safe and friendly atmosphere where each child can unlock their potential under the guidance of experienced coaches."
+    },
+    "2_question": {
+      "question": "How are the lessons conducted?",
+      "answer": "Lessons at the children's swimming school are an exciting and beneficial process aimed at developing swimming skills, improving health, and building confidence in the water. Each lesson begins with a warm-up on land to prepare muscles for exercise and get the body warmed up. Then the children move to the pool, where they are greeted by qualified coaches. Depending on the children's skill level, lessons include learning basic skills (breathing, gliding, swimming with a board) or improving techniques of various strokes (freestyle, breaststroke, backstroke). Coaches use playful methods to make learning fun and engaging. Safety is given special attention: younger children practice in shallow water, and groups are formed according to age and skill level. At the end of each lesson, small water games or competitions are held to help children reinforce what they’ve learned and develop team spirit. Swimming lessons not only teach but also bring joy to children, strengthen their health, and foster a love of water."
+    },
+    "3_question": {
+      "question": "Safety during Training",
+      "answer": "In our swimming school, children's safety is our top priority. All training sessions are closely monitored by qualified coaches who have experience working with children and know how to ensure comfort and safety in the water. We use modern equipment and maintain a clean pool environment. For younger children, lessons take place in shallow water, and beginners are provided with auxiliary swimming aids. Groups are formed based on age and skill level, allowing each child to receive individual attention and support. Before the lessons, coaches conduct mandatory safety briefings on pool behavior. We place special emphasis on teaching children safe practices in the water, which helps not only during training but also in real life. With us, you can be sure that your child is in reliable hands and enjoying swimming in a safe and welcoming environment."
+    },
+    "4_question": {
+      "question": "Safety during Training",
+      "answer": "In our swimming school, children's safety is our top priority. All training sessions are closely monitored by qualified coaches who have experience working with children and know how to ensure comfort and safety in the water. We use modern equipment and maintain a clean pool environment. For younger children, lessons take place in shallow water, and beginners are provided with auxiliary swimming aids. Groups are formed based on age and skill level, allowing each child to receive individual attention and support. Before the lessons, coaches conduct mandatory safety briefings on pool behavior. We place special emphasis on teaching children safe practices in the water, which helps not only during training but also in real life. With us, you can be sure that your child is in reliable hands and enjoying swimming in a safe and welcoming environment."
+    }
+  },
+  "contact_form": {
+    "name": "Name",
+    "number": "Phone",
+    "message": "Message",
+    "button": "Sign Up"
   }
 }

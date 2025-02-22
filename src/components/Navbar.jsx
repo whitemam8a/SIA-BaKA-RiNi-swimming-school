@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../components/LanguageSection";
 
 const Navbar = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
+  const languages = {
+    en: "🇺🇸 En",
+    ru: "🇷🇺 Ru",
+  };
+
   return (
-    <nav>
+    <nav className="sticky top-0 z-50">
       <div className="navbar navbar_custom">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">SIA Baka RiNi</a>
         </div>
+        <LanguageSwitcher languages={languages} />
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
