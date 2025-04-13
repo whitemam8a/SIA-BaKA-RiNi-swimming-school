@@ -6,20 +6,10 @@ const FAQ = () => {
   const { t } = useTranslation();
 
   return (
-    // <div className="flex flex-col items-center  mx-3 gap-3 div_custom" id="FAQ">
-    //   <strong className="strong-style">Часто задаваемые вопросы</strong>
-    //   <FAQBlock title={"О школе."} description={"SIA BaKa RiNi"} />
-    //   <FAQBlock title={"Как проходят занятия?"} description={"SIA BaKa RiNi"} />
-    //   <FAQBlock
-    //     title={"Безопасность на тренировках"}
-    //     description={"SIA BaKa RiNi"}
-    //   />
-    //   <FAQBlock
-    //     title={"Могут ли родители присутсвовать на тренировках?"}
-    //     description={"SIA BaKa RiNi"}
-    //   />
-    // </div>
-    <div className="flex flex-col items-center px-6 py-12 bg-gray-50" id="FAQ">
+    <div
+      className="flex flex-col items-center py-12 bg-gray-50 components"
+      id="FAQ"
+    >
       <h2 className="text-3xl font-extrabold text-gray-800 mb-8">
         {t("faq.faq")}
       </h2>

@@ -82,5 +82,10 @@
     "number": "Phone",
     "message": "Message",
     "button": "Sign Up"
+  },
+  "contacts": {
+    "contacts": "Contacts",
+    "contact_us": "Contact:",
+    "call": "Call us"
   }
 }

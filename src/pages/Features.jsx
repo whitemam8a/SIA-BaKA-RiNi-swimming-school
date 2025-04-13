@@ -8,6 +8,8 @@ import { useTranslation } from "react-i18next";
 const Features = () => {
   const { t } = useTranslation();
 
+  const IconSize = 40;
+
   return (
     // <div className="flex flex-col items-center gap-6 div_custom" id="features">
     //   <strong className="strong-style">Почему Мы?</strong>
@@ -36,23 +38,23 @@ const Features = () => {
     //   </div>
     // </div>
     <div
-      className="flex flex-col items-center gap-12 py-16 px-5 bg-gray-50"
+      className="flex flex-col items-center gap-12 py-16 bg-gray-50 components"
       id="features"
     >
       <h2 className="text-3xl font-extrabold ">{t("features.why_we")}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         <CardFeatures
-          logo={<CupIcon size={40} className="text-indigo-600" />}
+          logo={<CupIcon size={IconSize} className="text-indigo-600" />}
           title={t("features.1_card.title")}
           description={t("features.1_card.description")}
         />
         <CardFeatures
-          logo={<DollarIcon size={40} className="text-green-600" />}
+          logo={<DollarIcon size={IconSize} className="text-green-600" />}
           title={t("features.2_card.title")}
           description={t("features.2_card.description")}
         />
         <CardFeatures
-          logo={<LifeRingIcon size={40} className="text-blue-600" />}
+          logo={<LifeRingIcon size={IconSize} className="text-blue-600" />}
           title={t("features.3_card.title")}
           description={t("features.3_card.description")}
         />

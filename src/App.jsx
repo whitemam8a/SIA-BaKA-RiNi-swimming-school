@@ -1,18 +1,16 @@
 import React from "react";
-import FirstScreen from "./blocks/FirstScreen";
-import Navbar from "./components/Navbar";
-import Product_Service from "./blocks/Product_Service";
-import Pricing from "./blocks/Pricing";
-import Features from "./blocks/Features";
-import Coaches from "./blocks/Coaches";
-import FAQ from "./blocks/FAQ";
-import ContactsForm from "./blocks/ContactsForm";
-import Contacts from "./blocks/Contacts";
+import FirstScreen from "./pages/FirstScreen";
+import Product_Service from "./pages/Product_Service";
+import Pricing from "./pages/Pricing";
+import Features from "./pages/Features";
+import Coaches from "./pages/Coaches";
+import FAQ from "./pages/FAQ";
+import ContactsForm from "./pages/ContactsForm";
+import Layout from "./pages/layout/Layout";
 
 const App = () => {
   return (
-    <>
-      <Navbar />
+    <Layout>
       {/* First screen */}
       <FirstScreen />
       {/* Features */}
@@ -27,9 +25,7 @@ const App = () => {
       <FAQ />
       {/* Contact Form */}
       <ContactsForm />
-      {/* Contacts */}
-      <Contacts />
-    </>
+    </Layout>
   );
 };
 

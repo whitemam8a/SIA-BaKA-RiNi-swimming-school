@@ -9,13 +9,14 @@ const Navbar = () => {
   const languages = {
     en: "🇺🇸 En",
     ru: "🇷🇺 Ru",
+    lv: "🇱🇻 Lv",
   };
 
   return (
     <nav className="sticky top-0 z-50">
       <div className="navbar navbar_custom">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">SIA Baka RiNi</a>
+          <a className="btn btn-ghost text-xl">Baka RiNi</a>
         </div>
         <LanguageSwitcher languages={languages} />
         <div className="navbar-center hidden lg:flex">

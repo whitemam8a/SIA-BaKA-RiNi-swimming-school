@@ -1,14 +1,51 @@
 import React from "react";
+import {
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Typography,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const FAQBlock = ({ title, description }) => {
+export default function FAQBlock({ title, description }) {
   return (
-    <details className="collapse collapse-arrow bg-slate-200">
-      <summary className="collapse-title text-xl font-medium">{title}</summary>
-      <div className="collapse-content">
-        <p>{description}</p>
-      </div>
-    </details>
+    <Accordion
+      elevation={3}
+      disableGutters
+      sx={{
+        bgcolor: "slategray.100",
+        backgroundColor: "#e2e8f0",
+        borderRadius: 5,
+        mb: 1,
+        "&:before": {
+          display: "none",
+        },
+        "&:first-of-type": {
+          borderTopLeftRadius: 20,
+          borderTopRightRadius: 20,
+        },
+        "&:last-of-type": {
+          borderBottomLeftRadius: 20,
+          borderBottomRightRadius: 20,
+        },
+      }}
+    >
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon />}
+        aria-controls="panel-content"
+        id="panel-header"
+        sx={{
+          paddingX: 2,
+          paddingY: 1.5,
+        }}
+      >
+        <Typography sx={{ fontWeight: 500, fontSize: "1.25rem" }}>
+          {title}
+        </Typography>
+      </AccordionSummary>
+      <AccordionDetails sx={{ paddingX: 2, paddingBottom: 2 }}>
+        <Typography>{description}</Typography>
+      </AccordionDetails>
+    </Accordion>
   );
-};
-
-export default FAQBlock;
+}

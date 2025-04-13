@@ -16,6 +16,10 @@ body {
   background-color: white;
 }
 
+.components {
+  @apply lg:px-[100px] md:px-10 sm:px-0;
+}
+
 .first_screen {
   background-image: linear-gradient(
       to left,
