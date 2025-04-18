@@ -13,18 +13,18 @@
     "button": "Pieteikties izmēģinājuma nodarbībai -50%"
   },
   "features": {
-    "why_we": "Kāpēc mēs?",
+    "why_we": "KĀPĒC MĒS?",
     "1_card": {
-      "title": "Latvijas Peldēšanas savienības biedrs",
-      "description": "Pievienojoties mūsu klubam, jūsu bērns varēs pārstāvēt mūsu skolu peldēšanas sacensībās"
+      "title": "VESELĪBA, DROŠĪBA UN LABS GARASTĀVOKLIS",
+      "description": "Mūsu misija ir jūsu bērna veselība un pozitīvas emocijas. Katram bērnam mūsu skolā ir personīgs treneris. Nodarbības notiek individuālā formātā, lai bērni justos pēc iespējas ērtāk un drošāk."
     },
     "2_card": {
-      "title": "Jūsu nodarbības nepazūd",
-      "description": "Mēs cienām jūsu laiku un nevēlamies, lai kāda nodarbība tiek zaudēta slimības dēļ. Ja jūsu bērns nevar apmeklēt nodarbību, mēs nodrošināsim bezmaksas iespēju to apmeklēt citā grupā."
+      "title": "PROFESIONĀLA TRENERU KOMANDA",
+      "description": "Mūsu komanda sastāv no sertificētiem treneriem, kuri strādā pēc modernām metodēm, regulāri paaugstina savu kvalifikāciju un, pats galvenais – mīl un saprot bērnus. Viņi prot atrast pieeju katram bērnam, padarot nodarbības aizraujošas un pielāgotas bērna raksturam, noskaņojumam un vajadzībām."
     },
     "3_card": {
-      "title": "Ērts laiks",
-      "description": "Mēs saprotam, ka jūsu grafiks var būt aizņemts, tāpēc piedāvājam elastīgu nodarbību grafiku."
+      "title": "ĒRTĪBAS UN ELASTĪGA PIEEJA",
+      "description": "Mēs piedāvājam elastīgu un ērtu nodarbību grafiku. Mēs cienām jūsu laiku un resursus – ja bērns izlaida nodarbību attaisnojoša iemesla dēļ, mēs piedāvāsim iespējas apmeklēt nodarbību citā grupā vai laikā bez papildu maksas."
     }
   },
   "product_sevices": {
@@ -35,49 +35,50 @@
     "4_product": "<1>Sagatavošana sporta peldēšanai (no 5 gadiem)</1> – nodarbības tiem, kuri vēlas sasniegt augstus rezultātus. Nodarbības ietver sporta peldēšanas stilu tehnikas apguvi un izturības attīstīšanu."
   },
   "pricing": {
-    "pricing": "Mūsu cenas",
+    "pricing": "Mūsu Cenas",
     "1_card": {
-      "title": "Mazuļi",
-      "description": "Vecums no 1,5 līdz 2 gadiem",
-      "price": "100"
+      "title": "MAZUĻU PELDĒŠANA",
+      "description": "Individuālas nodarbības mazuļiem no 1 līdz 3 gadiem.",
+      "price": "50"
     },
     "2_card": {
-      "title": "Grupas nodarbības",
-      "description": "Grupās līdz 7 bērniem, vecums no 4 gadiem",
-      "price": "100"
+      "title": "BĒRNU PELDĒŠANA",
+      "description": "Individuālas nodarbības bērniem no 3 līdz 5 gadiem.",
+      "price": "50"
     },
     "3_card": {
-      "title": "Individuālās nodarbības",
-      "description": "Jebkurš vecums",
-      "price": "150"
+      "title": "GANDRĪZ PIEAUGUŠO PELDĒŠANA",
+      "description": "Individuālas nodarbības bērniem no 6 līdz 12 gadiem.",
+      "price": "50"
     },
     "4_card": {
-      "title": "Individuālās nodarbības",
-      "description": "Jebkurš vecums",
-      "price": "200"
+      "title": "GRUPU PELDĒŠANA BĒRNIEM",
+      "description": "Grupu nodarbības bērniem no 3 līdz 12 gadiem. Grupas tiek veidotas pēc vecuma un prasmju līmeņa.",
+      "price": "30"
     }
   },
   "coaches": "empty",
   "faq": {
     "faq": "Biežāk uzdotie jautājumi",
     "1_question": {
-      "question": "Par skolu",
-      "answer": "Mūsu bērnu peldēšanas skola ir vieta, kur bērni apgūst pārliecību ūdenī, attīsta fizisko formu un gūst prieku no aktīva dzīvesveida. Mēs radām drošu un draudzīgu vidi, kurā katrs bērns var attīstīt savas spējas pieredzējušu treneru vadībā."
+      "question": "Kas nepieciešams apmeklējumam? (Ko ņemt līdzi uz nodarbību?)",
+      "answer": "<ul><li>🩱 Peldkostīms / peldbikses</li><li>🍼 Peldēšanas autiņbiksītes <strong class='text-sm text-gray-500'>(ja nepieciešams)</strong></li><li>🏊‍♀️ Peldcepure un brilles</li><li>🩴 Apavi baseinam</li><li>🧴 Dvieļi vai halāts ar kapuci un dušas piederumi</li><li>😊 <strong class='text-emerald-600'>LABS NOSKAŅOJUMS!</strong></li></ul>"
     },
     "2_question": {
-      "question": "Kā notiek nodarbības?",
-      "answer": "Nodarbības bērnu peldēšanas skolā ir aizraujošs un noderīgs process, kura mērķis ir peldēšanas prasmju attīstīšana, veselības stiprināšana un pārliecības iegūšana ūdenī. Katra nodarbība sākas ar iesildīšanos uz sauszemes, kas palīdz sagatavot muskuļus un iesildīt ķermeni. Pēc tam bērni dodas uz baseinu, kur viņus sagaida kvalificēti treneri. Atkarībā no sagatavotības līmeņa, nodarbības ietver pamata prasmju apgūšanu (elpošana, slīdēšana, peldēšana ar dēli) vai peldēšanas stilu tehnikas uzlabošanu (kraulings, brasls, uz muguras). Treneri izmanto spēļu metodes, lai padarītu mācīšanos interesantu. Īpaša uzmanība tiek pievērsta drošībai: mazuļi trenējas seklumā, un grupas tiek veidotas pēc vecuma un sagatavotības. Nodarbības beigās notiek nelielas spēles vai sacensības, kas palīdz nostiprināt iemācīto un attīstīt komandas garu. Nodarbības ne tikai māca, bet arī sniedz prieku, stiprina veselību un veido mīlestību pret ūdeni."
+      "question": "Cik ilga ir nodarbība?",
+      "answer": "Nodarbība ilgst 45 minūtes. Mazākiem bērniem tā var tikt saīsināta līdz 30 minūtēm."
     },
     "3_question": {
-      "question": "Drošība nodarbībās",
-      "answer": "Mūsu peldēšanas skolā bērnu drošība ir prioritāte. Visas nodarbības notiek kvalificētu treneru uzraudzībā, kuriem ir pieredze darbā ar bērniem. Mēs izmantojam modernu aprīkojumu un rūpīgi uzturam baseina tīrību. Mazuļiem nodarbības notiek seklā ūdenī, bet iesācējiem ir pieejami palīglīdzekļi. Grupas tiek veidotas pēc vecuma un sagatavotības, kas ļauj katram bērnam saņemt uzmanību un atbalstu. Pirms nodarbību sākuma treneri veic drošības instruktāžu. Mēs īpaši mācām drošu uzvedību ūdenī, kas ir svarīgi ne tikai treniņos, bet arī ikdienā. Ar mums jūsu bērns ir drošās rokās un var izbaudīt peldēšanu drošā un draudzīgā vidē."
+      "question": "Cik bieži jāapmeklē baseins?",
+      "answer": "Mēs iesakām apmeklēt nodarbības 2–3 reizes nedēļā. Šāda regularitāte veicina ātrus rezultātus jau pirmajos mēnešos. Ja apmeklējumi kļūst neregulāri, bērns var zaudēt ieradumu, un būs jāsāk adaptācija no jauna."
     },
     "4_question": {
-      "question": "Drošība nodarbībās",
-      "answer": "Mūsu peldēšanas skolā bērnu drošība ir prioritāte. Visas nodarbības notiek kvalificētu treneru uzraudzībā, kuriem ir pieredze darbā ar bērniem. Mēs izmantojam modernu aprīkojumu un rūpīgi uzturam baseina tīrību. Mazuļiem nodarbības notiek seklā ūdenī, bet iesācējiem ir pieejami palīglīdzekļi. Grupas tiek veidotas pēc vecuma un sagatavotības, kas ļauj katram bērnam saņemt uzmanību un atbalstu. Pirms nodarbību sākuma treneri veic drošības instruktāžu. Mēs īpaši mācām drošu uzvedību ūdenī, kas ir svarīgi ne tikai treniņos, bet arī ikdienā. Ar mums jūsu bērns ir drošās rokās un var izbaudīt peldēšanu drošā un draudzīgā vidē."
+      "question": "Drošība treniņos",
+      "answer": "Mūsu peldēšanas skolā bērnu drošība ir pirmajā vietā. Visas nodarbības vada kvalificēti treneri ar pieredzi darbā ar bērniem, nodrošinot komfortu un drošību ūdenī. Mēs izmantojam modernu aprīkojumu un uzturam baseinu tīru un higiēnisku. Mazajiem bērniem nodarbības notiek seklā ūdenī, bet iesācējiem ir pieejami palīglīdzekļi. Grupas tiek veidotas pēc vecuma un sagatavotības līmeņa, lai katrs bērns saņemtu uzmanību un atbalstu. Pirms nodarbībām treneri sniedz drošības instrukcijas un māca drošības noteikumus ūdenī — tas noderēs arī ārpus nodarbībām. Mēs rūpējamies par to, lai bērni justos droši un ar prieku apgūtu peldēšanu."
     }
   },
   "contact_form": {
+    "contacts": "Sazinieties ar mums",
     "name": "Vārds",
     "number": "Telefons",
     "message": "Ziņojums",

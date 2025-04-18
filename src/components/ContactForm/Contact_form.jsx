@@ -27,11 +27,12 @@ const Contact_form = ({ button }) => {
     console.log(formData);
 
     // Отправка данных формы через EmailJS
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    emailjs.init("dbqI-RPP_c06PSbSg");
+    emailjs.init(publicKey);
 
-    const serviceID = "service_jdb566j";
-    const templateID = "template_na328em";
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 
     emailjs.send(serviceID, templateID, formData).then(
       (response) => {
@@ -101,13 +102,13 @@ const Contact_form = ({ button }) => {
             htmlFor="phone"
             className="block text-lg font-medium text-gray-700"
           >
-            {t("contact_form.name")}
+            {t("contact_form.number")}
           </label>
           <input
             type="tel"
             id="phone"
             name="phone"
-            placeholder={t("contact_form.name")}
+            placeholder={t("contact_form.number")}
             value={formData.phone}
             onChange={handleChange}
             required

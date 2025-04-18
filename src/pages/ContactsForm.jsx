@@ -1,57 +1,30 @@
 import { useEffect } from "react";
+import ContactForm from "../components/ContactForm/Contact_form";
+import { useTranslation } from "react-i18next";
+import { Box, Typography } from "@mui/material";
 
 export const ContactsForm = () => {
-  // useEffect(() => {
-  //   const handleMessage = (e) => {
-  //     if (/(easyweek|eswk)\./.test(e.origin) && e.data?.type === "redirect") {
-  //       window.location.replace(e.data.url);
-  //     }
-  //   };
-
-  //   window.addEventListener("message", handleMessage);
-  //   return () => {
-  //     window.removeEventListener("message", handleMessage);
-  //   };
-  // }, []);
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.innerHTML = `
-      (function(w,l){
-        w.addEventListener("message",function(e){
-          if(/(easyweek|eswk)\\./.test(e.origin) && e.data && e.data.type==="redirect"){
-            l.replace(e.data.url)
-          }
-        })
-      })(window,location);
-    `;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  const { t } = useTranslation();
 
   return (
-    <div id="FirstPrictice">
-      {/* <iframe
-        src="https://booking.easyweek.lv/sia-baka-rini"
-        style={{ border: 0, maxWidth: "100%" }}
-        frameBorder="0"
-        referrerPolicy="origin"
-        width="100%"
-        height="600"
-      ></iframe> */}
-      <iframe
-        src="https://booking.easyweek.lv/baka-rini"
-        style={{ border: 0, maxWidth: "100%" }}
-        frameBorder="0"
-        referrerPolicy="origin"
-        width="100%"
-        height="600"
-        title="EasyWeek Booking"
-      ></iframe>
-    </div>
+    <Box
+      id="FirstPrictice"
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center", // Центровка по вертикали
+        alignItems: "center", // Центровка по горизонтали
+        minHeight: "80vh",
+        py: 6,
+      }}
+    >
+      <h2 className="text-4xl font-extrabold text-center pb-5">
+        {t("contact_form.contact")}
+      </h2>
+      <Box sx={{ width: "100%", maxWidth: 500 }}>
+        <ContactForm button={t("contact_form.button")} />
+      </Box>
+    </Box>
   );
 };
 

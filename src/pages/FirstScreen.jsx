@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation, Trans } from "react-i18next";
-import ContactForm from "../components/ContactForm/Contact_form";
+import { EasyWeekWidget } from "../components/EasyWeekWidget";
 
 const FirstScreen = () => {
   const { t } = useTranslation();
@@ -38,7 +38,7 @@ const FirstScreen = () => {
             <h3 className="text-2xl font-bold mb-4 text-center">
               {t("first_screen.button")}
             </h3>
-            <ContactForm button={t("contact_form.button")} />
+            <EasyWeekWidget />
           </div>
         </div>
       )}

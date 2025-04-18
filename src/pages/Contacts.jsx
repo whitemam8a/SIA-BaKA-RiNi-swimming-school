@@ -4,6 +4,13 @@ import { MdEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import Contact_form from "../components/ContactForm/Contact_form";
 import { useTranslation } from "react-i18next";
+import {
+  InstagramIcon,
+  WhatsAppIcon,
+  TelegramIcon,
+  EmailIcon,
+  LocalPhoneIcon,
+} from "../assets/icons";
 
 const Contacts = () => {
   const { t } = useTranslation();
@@ -64,7 +71,7 @@ const Contacts = () => {
               href="tel:+37269105599"
               className="text-lg text-black hover:underline flex inline-flex gap-2"
             >
-              <IoIosCall />
+              <LocalPhoneIcon />
               {t("contacts.call")} +372 6910 5599
             </a>
           </li>
@@ -73,7 +80,7 @@ const Contacts = () => {
               href="mailto:siabakarini@gmail.com"
               className="text-lg text-black hover:underline flex inline-flex items-center gap-2"
             >
-              <MdEmail />
+              <EmailIcon />
               Email: siabakarini@gmail.com
             </a>
           </li>
@@ -82,8 +89,18 @@ const Contacts = () => {
               href="https://t.me/username"
               className="text-lg text-black hover:underline flex inline-flex items-center gap-2"
             >
-              <FaTelegram />
+              <TelegramIcon />
               Telegram
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/ruslan_sereda_/"
+              className="text-lg text-black hover:underline flex inline-flex items-center gap-2"
+              target="_blank"
+            >
+              <InstagramIcon />
+              Instagram
             </a>
           </li>
           <li>
@@ -91,7 +108,7 @@ const Contacts = () => {
               href="https://wa.me/1234567890"
               className="text-lg text-black hover:underline flex inline-flex items-center gap-2"
             >
-              <FaWhatsapp />
+              <WhatsAppIcon />
               WhatsApp
             </a>
           </li>

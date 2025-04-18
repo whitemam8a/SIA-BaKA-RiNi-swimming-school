@@ -44,7 +44,8 @@ export default function FAQBlock({ title, description }) {
         </Typography>
       </AccordionSummary>
       <AccordionDetails sx={{ paddingX: 2, paddingBottom: 2 }}>
-        <Typography>{description}</Typography>
+        {/* РЕНДЕР JSX */}
+        <Typography component="div">{description}</Typography>
       </AccordionDetails>
     </Accordion>
   );
