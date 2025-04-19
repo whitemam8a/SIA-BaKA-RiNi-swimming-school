@@ -26,7 +26,7 @@ body {
       rgba(255, 255, 255, 0.133) 0%,
       rgba(255, 255, 255, 1) 100%
     ),
-    url("public/images/swimmer.jpg");
+    url("/images/swimmer.jpg");
   background-size: cover;
   background-position: center;
 }

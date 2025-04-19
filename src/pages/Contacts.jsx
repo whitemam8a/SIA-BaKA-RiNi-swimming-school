@@ -9,6 +9,7 @@ import {
 } from "../assets/icons";
 import { Typography, Box } from "@mui/material";
 import { motion } from "framer-motion";
+import { GoogleMaps } from "../components/GoogleMaps";
 
 const Contacts = () => {
   const { t } = useTranslation();
@@ -134,11 +135,12 @@ const Contacts = () => {
         >
           <a href="https://www.gps.ie/">gps vehicle tracker</a>
         </iframe> */}
-          <iframe
+          <GoogleMaps />
+          {/* <iframe
             src="https://www.google.com/maps/d/u/0/embed?mid=1Wah00BNZhLXWl8LtShqUPVhzGOBYj0c&ehbc=2E312F&noprof=1"
             width="100%"
             height="330"
-          ></iframe>
+          ></iframe> */}
         </div>
       </div>
       <Typography
