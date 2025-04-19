@@ -6,6 +6,7 @@ import { useKeenSlider } from "keen-slider/react";
 import { useTranslation } from "react-i18next";
 import AutoplayPlugin from "../assets/autoplay";
 import { motion } from "framer-motion";
+import Girl_swimming from "../assets/images/girl_swimming.jpg";
 
 const Pricing = () => {
   const { t } = useTranslation();
@@ -115,7 +116,7 @@ const Pricing = () => {
         className="block xl:hidden w-full px-10 flex"
         initial={{ opacity: 0, x: 100, y: 100 }}
         whileInView={{ opacity: 1, x: 0, y: 0 }}
-        transition={{ duration: 5 }}
+        transition={{ duration: 2 }}
         viewport={{ once: true }}
       >
         <Box ref={sliderRef} className="keen-slider">
@@ -132,9 +133,7 @@ const Pricing = () => {
           </Box>
           <Box className="keen-slider__slide">
             <Card
-              image={
-                "https://static.tildacdn.com/tild6464-3261-4433-b062-383737656434/grudnichkovoe-i-dets.jpg"
-              }
+              image={Girl_swimming}
               imgAlt={"4 kids looking at the camera at the beachside bessin."}
               title={t("pricing.2_card.title")}
               description={t("pricing.2_card.description")}

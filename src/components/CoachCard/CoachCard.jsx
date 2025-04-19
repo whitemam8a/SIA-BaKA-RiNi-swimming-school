@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ModalCoachCard from "./ModalCoachCard";
 import { Box, Button, Typography } from "@mui/material";
 
-const CardCoach = ({ image, imgAlt, name, description }) => {
+const CardCoach = ({ image, imgAlt, name, short_description, description }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -27,9 +27,20 @@ const CardCoach = ({ image, imgAlt, name, description }) => {
             className="w-full h-full object-cover object-top"
           />
         </figure>
-        <Box className="card-body h-[250px]">
+        <Box className="card-body h-[180px]">
           <h2 className="card-title">{name}</h2>
-          <Typography>{description}</Typography>
+          <Typography
+            sx={{
+              fontSize: "0.8rem",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+              display: "-webkit-box",
+              WebkitLineClamp: 3,
+              WebkitBoxOrient: "vertical",
+            }}
+          >
+            {short_description}
+          </Typography>
           <Button variant="outlined">Узнать больше</Button>
         </Box>
       </Box>
@@ -37,7 +48,7 @@ const CardCoach = ({ image, imgAlt, name, description }) => {
       <ModalCoachCard
         isOpen={isModalOpen}
         onClose={handleCloseModal}
-        data={{ image, imgAlt, name, description }}
+        data={{ image, imgAlt, name, short_description, description }}
       />
     </>
   );

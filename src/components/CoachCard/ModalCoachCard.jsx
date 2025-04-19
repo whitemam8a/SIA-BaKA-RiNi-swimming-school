@@ -13,6 +13,8 @@ const modalStyle = {
   p: 4,
   width: "90%",
   maxWidth: 800,
+  maxHeight: "90vh",
+  overflowY: "auto",
 };
 
 const ModalCoachCard = ({ isOpen, onClose, data }) => {
@@ -37,7 +39,14 @@ const ModalCoachCard = ({ isOpen, onClose, data }) => {
           <img
             src={data.image}
             alt={data.imgAlt}
-            className="w-full sm:w-[250px] h-[200px] sm:h-[250px] object-cover rounded"
+            style={{
+              width: "100%",
+              maxWidth: "250px",
+              height: "auto",
+              objectFit: "cover",
+              borderRadius: "8px",
+              flexShrink: 0,
+            }}
           />
           <Box>
             <Typography sx={{ mb: 2 }}>

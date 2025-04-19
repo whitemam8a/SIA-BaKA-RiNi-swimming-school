@@ -6,54 +6,60 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import { IconButton, Box } from "@mui/material";
 import AutoplayPlugin from "../assets/autoplay";
+import Ruslan_Sereda from "../assets/images/Ruslan_Sereda.jpg";
 
 const coachData = [
   {
     image: "https://olimpiec.by/wp-content/uploads/2023/01/chudnikov-anton.jpg",
     name: "Антон Чудников",
     imgAlt: "photo Антон Чудников",
-    description: (
+    short_description: (
       <>
         Высшее педагогическое образование. Опыт работы более 10 лет. <br />
         Окончил курсы по обучению плаванию детей, по гидрореабилитации.
       </>
     ),
+    description: "",
   },
   {
     image:
       "https://olympicstyle.com.ua/wp-content/uploads/2020/08/IMG_0995.jpg",
     name: "Виталий Пупкин",
     imgAlt: "photo Виталий Пупкин",
-    description: (
+
+    short_description: (
       <>
         Спортивный опыт: 25 лет <br />
         Тренерский опыт: 10 лет
       </>
     ),
+    description:
+      "Привет! Я – весёлый и внимательный тренер, который поможет твоему малышу полюбить воду и научиться плавать с радостью! Мои занятия – это игры, увлекательные упражнения и поддержка, чтобы каждый ребёнок чувствовал себя уверенно в бассейне.🔹 Индивидуальный подход – учитываю возраст и уровень подготовки.🔹 Безопасность – всегда на первом месте. 🔹Лёгкое обучение – через интерес и доброе отношение.",
   },
   {
-    image:
-      "https://sun9-86.userapi.com/impg/CufFVYXWpN1rjoSrW3T3DqZsuG5I0sjewfUPZQ/ISoFgF8Qw34.jpg",
-    name: "Голикова Анна",
-    imgAlt: "photo Голикова Анна",
-    description: (
+    image: Ruslan_Sereda,
+    name: "Ruslan Sereda",
+    imgAlt: "photo Ruslan Sereda",
+    short_description: (
       <>
-        Спортивный опыт: 10 лет <br />
+        Высшее педагогическое образование <br />
         Тренерский опыт: 7 лет
       </>
     ),
+    description: "",
   },
   {
     image:
       "https://irklider.ru/wp-content/uploads/2022/09/photo_2022-09-23_11-12-56.jpg",
     name: "Виталий Брызговиков",
     imgAlt: "photo Виталий Брызговиков",
-    description: (
+    short_description: (
       <>
         Спортивный опыт: 15 лет <br />
         Тренерский опыт: 18 лет
       </>
     ),
+    description: "",
   },
 ];
 
@@ -61,7 +67,7 @@ const Coaches = () => {
   const [sliderRef, slider] = useKeenSlider(
     {
       loop: true,
-      mode: "free-snap",
+      mode: "snap",
       dragSpeed: 1,
       slides: {
         perView: 1,
@@ -69,7 +75,7 @@ const Coaches = () => {
         origin: "center",
       },
       defaultAnimation: {
-        duration: 800,
+        duration: 600,
         easing: (t) => t * (2 - t),
       },
       breakpoints: {
@@ -129,6 +135,7 @@ const Coaches = () => {
                 image={coach.image}
                 name={coach.name}
                 imgAlt={coach.imgAlt}
+                short_description={coach.short_description}
                 description={coach.description}
               />
             </Box>

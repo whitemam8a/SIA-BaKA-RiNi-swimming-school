@@ -9,15 +9,9 @@ export default function AutoplayPlugin(slider) {
   function nextTimeout() {
     clearTimeout(timeout);
     if (mouseOver) return;
-
     timeout = setTimeout(() => {
-      if (slider.options.loop) {
-        slider.next();
-      } else {
-        if (slider.track.details.rel < slider.track.details.slides.length - 1) {
-          slider.next();
-        }
-      }
+      const nextSlide = slider.track.details.abs + 1;
+      slider.moveToIdx(nextSlide, true);
     }, 3000);
   }
 
@@ -32,7 +26,6 @@ export default function AutoplayPlugin(slider) {
     });
     nextTimeout();
   });
-
   slider.on("dragStarted", clearNextTimeout);
   slider.on("animationEnded", nextTimeout);
   slider.on("updated", nextTimeout);
