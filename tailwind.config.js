@@ -7,7 +7,6 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
-        sans: ["Poppins", ...fontFamily.sans],
       },
       screens: {
         xl: "1400px",
