@@ -23,10 +23,10 @@ body {
 .first_screen {
   background-image: linear-gradient(
       to left,
-      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.133) 0%,
       rgba(255, 255, 255, 1) 100%
     ),
-    url("https://reutbas.ru/upload/uf/f7c/p6p27xptswyisgb755awyuk92ism5q9t.png");
+    url("/Users/daniilsereda/React_projects/Web-design/swimming_school/src/assets/images/swimmer.jpg");
   background-size: cover;
   background-position: center;
 }

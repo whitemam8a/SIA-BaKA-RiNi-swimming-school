@@ -5,6 +5,7 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useTranslation } from "react-i18next";
 import AutoplayPlugin from "../assets/autoplay";
+import { motion } from "framer-motion";
 
 const Pricing = () => {
   const { t } = useTranslation();
@@ -61,7 +62,15 @@ const Pricing = () => {
       className="flex flex-col items-center gap-12 py-16 bg-gray-50 components"
       id="pricing"
     >
-      <h2 className="text-4xl font-extrabold ">{t("pricing.pricing")}</h2>
+      <motion.h2
+        className="text-4xl font-extrabold "
+        initial={{ opacity: 0, x: -100, y: -100 }}
+        whileInView={{ opacity: 1, x: 0, y: 0 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+      >
+        {t("pricing.pricing")}
+      </motion.h2>
       {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <Card
           image={
@@ -102,7 +111,13 @@ const Pricing = () => {
           price={t("pricing.4_card.price")}
         />
       </div> */}
-      <div className="block xl:hidden w-full px-10 flex">
+      <motion.div
+        className="block xl:hidden w-full px-10 flex"
+        initial={{ opacity: 0, x: 100, y: 100 }}
+        whileInView={{ opacity: 1, x: 0, y: 0 }}
+        transition={{ duration: 5 }}
+        viewport={{ once: true }}
+      >
         <Box ref={sliderRef} className="keen-slider">
           <Box className="keen-slider__slide" sx={{ pb: 4 }}>
             <Card
@@ -151,9 +166,15 @@ const Pricing = () => {
             />
           </Box>
         </Box>
-      </div>
+      </motion.div>
 
-      <div className="hidden xl:grid grid-cols-4 w-full gap-6">
+      <motion.div
+        className="hidden xl:grid grid-cols-4 w-full gap-6"
+        initial={{ opacity: 0, x: 100, y: 100 }}
+        whileInView={{ opacity: 1, x: 0, y: 0 }}
+        transition={{ duration: 5 }}
+        viewport={{ once: true }}
+      >
         <Card
           image={
             "https://fitnessacademy.com.ua/wp-content/uploads/2018/11/kak-nauchit-rebenka-plavat.jpg"
@@ -192,7 +213,7 @@ const Pricing = () => {
           description={t("pricing.1_card.description")}
           price={t("pricing.4_card.price")}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

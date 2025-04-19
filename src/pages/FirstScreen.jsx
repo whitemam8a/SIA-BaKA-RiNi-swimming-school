@@ -8,7 +8,7 @@ const FirstScreen = () => {
 
   return (
     <>
-      <div className="flex flex-col items-start px-5 gap-5 py-[170px] first_screen div_custom">
+      <div className="flex flex-col items-start px-5 gap-5 py-[170px] h-screen first_screen div_custom font-sans lg:px-20">
         <h1 className="text-5xl font-bold text-[#1F2937] leading-tight md:leading-snug">
           {t("first_screen.title")}
         </h1>

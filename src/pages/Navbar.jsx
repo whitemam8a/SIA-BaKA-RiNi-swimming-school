@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50">
+    <nav className="sticky top-0 z-50 font-sans">
       <div className="navbar navbar_custom">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">Baka RiNi</a>

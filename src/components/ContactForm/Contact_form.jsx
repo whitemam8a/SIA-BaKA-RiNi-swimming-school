@@ -26,9 +26,7 @@ const Contact_form = ({ button }) => {
 
     console.log(formData);
 
-    // Отправка данных формы через EmailJS
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
     emailjs.init(publicKey);
 
     const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -58,7 +56,10 @@ const Contact_form = ({ button }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form
+        onSubmit={handleSubmit}
+        className="space-y-6 w-full max-w-lg mx-auto px-4 md:px-6"
+      >
         <div>
           <label
             htmlFor="name"
@@ -83,7 +84,7 @@ const Contact_form = ({ button }) => {
             htmlFor="email"
             className="block text-lg font-medium text-gray-700"
           >
-            Email
+            {"Email"}
           </label>
           <input
             type="email"
@@ -137,7 +138,7 @@ const Contact_form = ({ button }) => {
 
         <button
           type="submit"
-          className="btn bg-[#FF918F] hover:bg-[#FFBABA] border-none text-black font-semibold py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out mt-6 w-full"
+          className="w-full bg-[#FF918F] hover:bg-[#FFBABA] text-black font-semibold py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out"
         >
           {button}
         </button>

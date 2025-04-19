@@ -1,8 +1,4 @@
 import React from "react";
-import { FaTelegram, FaWhatsapp } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { IoIosCall } from "react-icons/io";
-import Contact_form from "../components/ContactForm/Contact_form";
 import { useTranslation } from "react-i18next";
 import {
   InstagramIcon,
@@ -11,9 +7,13 @@ import {
   EmailIcon,
   LocalPhoneIcon,
 } from "../assets/icons";
+import { Typography, Box } from "@mui/material";
+import { motion } from "framer-motion";
 
 const Contacts = () => {
   const { t } = useTranslation();
+
+  const MotionBox = motion(Box);
 
   return (
     // <div className="flex flex-col md:flex-row w-full" id="contacts">
@@ -55,68 +55,78 @@ const Contacts = () => {
     //     </iframe>
     //   </div>
     // </div>
-    <div
-      className="flex flex-col md:flex-row w-full gap-8 p-8 bg-[#98A2AA]"
-      id="contacts"
+    <MotionBox
+      className="bg-gradient-to-br from-[#98A2AA] via-[#B0B9C3] to-[#CED4DA]"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 3 }}
     >
-      {/* Контакты */}
-      <div className="flex-1 flex flex-col gap-4">
-        <h2 className="text-3xl font-bold text-gray-800">
-          {t("contacts.contacts")}
-        </h2>
-        <p className="text-gray-800">{t("contacts.contact_us")}</p>
-        <ul className="space-y-2">
-          <li>
-            <a
-              href="tel:+37269105599"
-              className="text-lg text-black hover:underline flex inline-flex gap-2"
-            >
-              <LocalPhoneIcon />
-              {t("contacts.call")} +372 6910 5599
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:siabakarini@gmail.com"
-              className="text-lg text-black hover:underline flex inline-flex items-center gap-2"
-            >
-              <EmailIcon />
-              Email: siabakarini@gmail.com
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://t.me/username"
-              className="text-lg text-black hover:underline flex inline-flex items-center gap-2"
-            >
-              <TelegramIcon />
-              Telegram
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/ruslan_sereda_/"
-              className="text-lg text-black hover:underline flex inline-flex items-center gap-2"
-              target="_blank"
-            >
-              <InstagramIcon />
-              Instagram
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://wa.me/1234567890"
-              className="text-lg text-black hover:underline flex inline-flex items-center gap-2"
-            >
-              <WhatsAppIcon />
-              WhatsApp
-            </a>
-          </li>
-        </ul>
-      </div>
-      {/* Карта */}
-      <div className="flex-1 shadow-lg rounded-lg overflow-hidden">
-        {/* <iframe
+      <div
+        className="flex flex-col md:flex-row w-full gap-8 p-8 "
+        id="contacts"
+      >
+        {/* Контакты */}
+        <div className="flex-1 flex flex-col gap-4">
+          <h2 className="text-3xl font-bold text-gray-800">
+            {t("contacts.contacts")}
+          </h2>
+          {/* <p className="text-gray-800">{t("contacts.contact_us")}</p> */}
+          <ul className="space-y-2">
+            <li>
+              <a
+                href="tel:+37269105599"
+                className="text-lg text-gray-900 hover:text-neutral-800 hover:underline transition-color duration-300 flex inline-flex gap-2"
+                target="_blank"
+              >
+                <LocalPhoneIcon />
+                {t("contacts.call")} +372 6910 5599
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:siabakarini@gmail.com"
+                className="text-lg text-gray-900 hover:text-neutral-800 hover:underline transition-color duration-300 flex inline-flex items-center gap-2"
+                target="_blank"
+              >
+                <EmailIcon />
+                Email: siabakarini@gmail.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://t.me/username"
+                className="text-lg text-gray-900 hover:text-blue-600 transition-color duration-300 flex inline-flex items-center gap-2"
+                target="_blank"
+              >
+                <TelegramIcon />
+                Telegram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/ruslan_sereda_/"
+                className="text-lg text-gray-900 hover:text-pink-600 transition-color duration-300 flex inline-flex items-center gap-2"
+                target="_blank"
+              >
+                <InstagramIcon />
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/1234567890"
+                className="text-lg text-gray-800 hover:text-green-400 transition-colors duration-300 flex inline-flex items-center gap-2"
+                target="_blank"
+              >
+                <WhatsAppIcon />
+                WhatsApp
+              </a>
+            </li>
+          </ul>
+        </div>
+        {/* Карта */}
+        <div className="flex-1 shadow-lg rounded-lg overflow-hidden">
+          {/* <iframe
           width="100%"
           height="300"
           className="rounded-lg"
@@ -124,13 +134,20 @@ const Contacts = () => {
         >
           <a href="https://www.gps.ie/">gps vehicle tracker</a>
         </iframe> */}
-        <iframe
-          src="https://www.google.com/maps/d/u/0/embed?mid=1Wah00BNZhLXWl8LtShqUPVhzGOBYj0c&ehbc=2E312F&noprof=1"
-          width="100%"
-          height="330"
-        ></iframe>
+          <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=1Wah00BNZhLXWl8LtShqUPVhzGOBYj0c&ehbc=2E312F&noprof=1"
+            width="100%"
+            height="330"
+          ></iframe>
+        </div>
       </div>
-    </div>
+      <Typography
+        align="center"
+        sx={{ py: 1, fontSize: "0.875rem", color: "#555" }}
+      >
+        © 2025 BaKa RiNi. All rights reserved
+      </Typography>
+    </MotionBox>
   );
 };
 

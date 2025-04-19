@@ -1,8 +1,12 @@
 import React from "react";
 import { useTranslation, Trans } from "react-i18next";
+import { motion } from "framer-motion";
 
 const Product_Service = () => {
   const { t } = useTranslation();
+
+  const WhileInView = { opacity: 1, x: 0 };
+  const Transition = { duration: 3 };
 
   return (
     // <div className="flex flex-col items-center mx-5 py-16" id="products">
@@ -37,10 +41,22 @@ const Product_Service = () => {
     //   </ol>
     // </div>
     <div className="flex flex-col items-center components py-16" id="products">
-      <h2 className="text-3xl font-extrabold mb-10">
+      <motion.h2
+        className="text-3xl font-extrabold mb-10"
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={WhileInView}
+        transition={Transition}
+        viewport={{ once: true }}
+      >
         {t("product_sevices.our_product")}
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl w-full">
+      </motion.h2>
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl w-full"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={WhileInView}
+        transition={Transition}
+        viewport={{ once: true }}
+      >
         {[
           "product_sevices.1_product",
           "product_sevices.2_product",
@@ -59,7 +75,7 @@ const Product_Service = () => {
             </p>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

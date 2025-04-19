@@ -10,31 +10,22 @@ const FAQ = () => {
       className="flex flex-col items-center py-12 bg-gray-50 components"
       id="FAQ"
     >
-      <h2 className="text-3xl font-extrabold text-gray-800 mb-8">
+      {/* Заголовок FAQ */}
+      <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-6 md:mb-8 text-center">
         {t("faq.faq")}
       </h2>
-      <div className="w-full max-w-4xl space-y-4">
-        {/* <FAQBlock
-          title={t("faq.1_question.question")}
-          description={t("faq.1_question.answer")}
-        /> */}
+
+      {/* Контейнер для вопросов */}
+      <div className="w-full max-w-4xl px-4 space-y-6 md:space-y-8">
         <FAQBlock
           title={t("faq.1_question.question")}
           description={
             <Trans
               i18nKey="faq.1_question.answer"
               components={{
-                ul: (
-                  <ul
-                    style={{
-                      paddingLeft: "1rem",
-                      listStyleType: "disc",
-                      margin: "1rem 0",
-                    }}
-                  />
-                ),
-                li: <li style={{ marginBottom: "0.5rem" }} />,
-                strong: <strong style={{ color: "#059669" }} />,
+                ul: <ul className="pl-5 list-disc my-4" />,
+                li: <li className="mb-2" />,
+                strong: <strong className="text-teal-500" />,
               }}
             />
           }
