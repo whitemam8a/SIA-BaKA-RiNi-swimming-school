@@ -16,7 +16,7 @@ const customIcon = {
   scaledSize: { width: 40, height: 40 },
   labelOrigin: { x: 20, y: -10 },
 };
-const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+const apiKey = "AIzaSyAKqxQnUrxto1FFkJkZ0c11QqplsjGA6Ao";
 
 export const GoogleMaps = () => {
   const [map, setMap] = useState(null);
