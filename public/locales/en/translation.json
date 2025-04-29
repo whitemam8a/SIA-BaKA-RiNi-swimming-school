@@ -57,7 +57,29 @@
       "price": "30"
     }
   },
-  "coaches": "empty",
+  "coaches": {
+    "our_coaches": "Our Coaches",
+    "Anton": {
+      "name": "Anton Chudnikov",
+      "short_description": "Higher pedagogical education.\n Over 4 years of experience.",
+      "description": ""
+    },
+    "Vitaliy": {
+      "name": "Vitaliy Pupkin",
+      "short_description": "Children's swimming courses.\nCoaching experience: 2 years",
+      "description": "Hi! I'm a fun and attentive coach who will help your child fall in love with water and learn to swim with joy! My lessons are full of games, engaging exercises, and support to help every child feel confident in the pool.\n🔹 Individual approach – tailored to age and skill level.\n🔹 Safety – always comes first.\n🔹 Easy learning – through fun and kindness."
+    },
+    "Ruslan": {
+      "name": "Ruslan Sereda",
+      "short_description": "Higher pedagogical education. \nWork experience of more than 10 years.",
+      "description": "Hello! I am a fun and attentive trainer who will help your little one to love the water and learn to swim with joy! My lessons are games, fun exercises and support to make every child feel confident in the pool.🔹 Individual approach - I take into account age and fitness level.🔹 Safety - always in the first place. 🔹 Easy learning - through interest and kind attitude."
+    },
+    "Vasily": {
+      "name": "Vasily Bryzgovikov",
+      "short_description": "Higher pedagogical education\nCoaching experience: 5 years",
+      "description": ""
+    }
+  },
   "faq": {
     "faq": "Frequently Asked Questions",
     "1_question": {

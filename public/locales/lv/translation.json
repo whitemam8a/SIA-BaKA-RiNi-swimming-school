@@ -57,7 +57,29 @@
       "price": "30"
     }
   },
-  "coaches": "empty",
+  "coaches": {
+    "our_coaches": "Mūsu treneri",
+    "Anton": {
+      "name": "Antons Čudņikovs",
+      "short_description": "Augstākā pedagoģiskā izglītība.\nVairāk nekā 4 gadu pieredze.",
+      "description": ""
+    },
+    "Vitaliy": {
+      "name": "Vitālijs Pupkins",
+      "short_description": "Bērnu peldēšanas kursi.\nTrenera pieredze: 2 gadi",
+      "description": "Sveiki! Esmu jautrs un uzmanīgs treneris, kurš palīdzēs jūsu bērnam iemīlēt ūdeni un ar prieku apgūt peldēšanu! Manas nodarbības ir pilnas spēļu, aizraujošu vingrinājumu un atbalsta, lai katrs bērns justos pārliecināti baseinā.\n🔹 Individuāla pieeja – pielāgota vecumam un prasmju līmenim.\n🔹 Drošība – vienmēr pirmajā vietā.\n🔹 Viegla mācīšanās – caur jautrību un laipnību."
+    },
+    "Ruslan": {
+      "name": "Ruslans Sereda",
+      "short_description": "Augstākā pedagoģiskā izglītība.\nVairāk nekā 10 gadu darba pieredze.",
+      "description": "Sveiki! Esmu jautrs un uzmanīgs treneris, kurš palīdzēs jūsu mazajam iemīlēt ūdeni un ar prieku apgūt peldēšanu! Manas nodarbības ir spēles, jautri vingrinājumi un atbalsts, lai katrs bērns justos pārliecināti baseinā.\n🔹 Individuāla pieeja – ņemu vērā vecumu un sagatavotības līmeni.\n🔹 Drošība – vienmēr pirmajā vietā.\n🔹 Viegla apmācība – caur interesi un laipnu attieksmi."
+    },
+    "Vasily": {
+      "name": "Vasīlijs Brizgovikovs",
+      "short_description": "Augstākā pedagoģiskā izglītība.\nTrenera pieredze: 5 gadi",
+      "description": ""
+    }
+  },
   "faq": {
     "faq": "Biežāk uzdotie jautājumi",
     "1_question": {

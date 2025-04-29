@@ -32,6 +32,7 @@ const CardCoach = ({ image, imgAlt, name, short_description, description }) => {
           <Typography
             sx={{
               fontSize: "0.8rem",
+              whiteSpace: "pre-line",
               overflow: "hidden",
               textOverflow: "ellipsis",
               display: "-webkit-box",
