@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import ModalCoachCard from "./ModalCoachCard";
 import { Box, Button, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const CardCoach = ({ image, imgAlt, name, short_description, description }) => {
+  const { t } = useTranslation();
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -42,7 +45,7 @@ const CardCoach = ({ image, imgAlt, name, short_description, description }) => {
           >
             {short_description}
           </Typography>
-          <Button variant="outlined">Узнать больше</Button>
+          <Button variant="outlined">{t("coaches.learn_more")}</Button>
         </Box>
       </Box>
 
