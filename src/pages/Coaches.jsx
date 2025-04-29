@@ -8,6 +8,10 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import { IconButton, Box } from "@mui/material";
 import AutoplayPlugin from "../assets/autoplay";
 import Ruslan_Sereda from "../assets/images/Ruslan_Sereda.jpg";
+import { motion } from "framer-motion";
+
+const WhileInView = { opacity: 1, x: 0 };
+const Transition = { duration: 3 };
 
 const Coaches = () => {
   const { t } = useTranslation();
@@ -106,7 +110,14 @@ const Coaches = () => {
           <KeyboardArrowLeft />
         </IconButton> */}
 
-        <div ref={sliderRef} className="keen-slider ">
+        <motion.div
+          ref={sliderRef}
+          className="keen-slider"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={WhileInView}
+          transition={Transition}
+          viewport={{ once: true }}
+        >
           {coachData.map((coach, index) => (
             <Box
               key={index}
@@ -122,14 +133,20 @@ const Coaches = () => {
               />
             </Box>
           ))}
-        </div>
+        </motion.div>
         {/* <IconButton onClick={() => slider.current?.next()} className="">
           <KeyboardArrowRight />
         </IconButton> */}
       </div>
 
       {/* Сетка: видна только на lg и выше */}
-      <div className="hidden xl:grid grid-cols-4 w-full gap-6">
+      <motion.div
+        className="hidden xl:grid grid-cols-4 w-full gap-6"
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={WhileInView}
+        transition={Transition}
+        viewport={{ once: true }}
+      >
         {coachData.map((coach, index) => (
           <CardCoach
             key={index}
@@ -140,7 +157,7 @@ const Coaches = () => {
             description={coach.description}
           />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

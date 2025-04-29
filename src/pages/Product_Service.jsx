@@ -2,11 +2,11 @@ import React from "react";
 import { useTranslation, Trans } from "react-i18next";
 import { motion } from "framer-motion";
 
+const WhileInView = { opacity: 1, x: 0 };
+const Transition = { duration: 3 };
+
 const Product_Service = () => {
   const { t } = useTranslation();
-
-  const WhileInView = { opacity: 1, x: 0 };
-  const Transition = { duration: 3 };
 
   return (
     // <div className="flex flex-col items-center mx-5 py-16" id="products">
