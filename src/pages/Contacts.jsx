@@ -36,12 +36,12 @@ const Contacts = () => {
           <ul className="space-y-2">
             <li>
               <a
-                href="tel:+37269105599"
+                href="tel:+37128555681"
                 className="text-lg text-gray-900 hover:text-neutral-800 hover:underline transition-color duration-300 flex inline-flex gap-2"
                 target="_blank"
               >
                 <LocalPhoneIcon />
-                {t("contacts.call")} +372 6910 5599
+                {t("contacts.call")} +371 2855 5681
               </a>
             </li>
             <li>
@@ -51,7 +51,7 @@ const Contacts = () => {
                 target="_blank"
               >
                 <EmailIcon />
-                Email: siabakarini@gmail.com
+                Email: bakarini@gmail.com
               </a>
             </li>
             <li>
@@ -66,7 +66,7 @@ const Contacts = () => {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/ruslan_sereda_/"
+                href="https://www.instagram.com/?flo=true"
                 className="text-lg text-gray-900 hover:text-pink-600 transition-color duration-300 flex inline-flex items-center gap-2"
                 target="_blank"
               >
@@ -76,7 +76,7 @@ const Contacts = () => {
             </li>
             <li>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/37128555681"
                 className="text-lg text-gray-800 hover:text-green-400 transition-colors duration-300 flex inline-flex items-center gap-2"
                 target="_blank"
               >
