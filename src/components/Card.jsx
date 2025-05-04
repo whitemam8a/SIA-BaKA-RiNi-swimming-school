@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ image, imgAlt, title, description, price }) => {
   return (
-    <div className="card bg-slate-75 mx-3 shadow-xl  w-[300px] h-[400px]">
+    <div className="card bg-slate-75 mx-3 shadow-xl w-[300px] h-[400px]">
       <figure className="flex justify-center items-center h-48 w-full overflow-hidden">
         <img src={image} alt={imgAlt} className="w-full h-full object-cover" />
       </figure>

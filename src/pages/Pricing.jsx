@@ -120,7 +120,7 @@ const Pricing = () => {
         viewport={{ once: true }}
       >
         <Box ref={sliderRef} className="keen-slider">
-          <Box className="keen-slider__slide" sx={{ pb: 4 }}>
+          <Box className="keen-slider__slide flex justify-start" sx={{ pb: 4 }}>
             <Card
               image={
                 "https://fitnessacademy.com.ua/wp-content/uploads/2018/11/kak-nauchit-rebenka-plavat.jpg"
@@ -131,7 +131,7 @@ const Pricing = () => {
               price={t("pricing.1_card.price")}
             />
           </Box>
-          <Box className="keen-slider__slide">
+          <Box className="keen-slider__slide flex justify-start">
             <Card
               image={Girl_swimming}
               imgAlt={"4 kids looking at the camera at the beachside bessin."}
@@ -140,7 +140,7 @@ const Pricing = () => {
               price={t("pricing.2_card.price")}
             />
           </Box>
-          <Box className="keen-slider__slide">
+          <Box className="keen-slider__slide flex justify-start">
             <Card
               image={
                 "https://splash-school.com/wp-content/uploads/2021/10/img_1411.jpg"
@@ -151,7 +151,7 @@ const Pricing = () => {
               price={t("pricing.3_card.price")}
             />
           </Box>
-          <Box className="keen-slider__slide">
+          <Box className="keen-slider__slide flex justify-start">
             <Card
               image={
                 "https://moysport.in/wp-content/uploads/2019/09/irfssqge-hy.jpg"
@@ -160,7 +160,7 @@ const Pricing = () => {
                 "coach explains swimming technique to a teenager by the pool "
               }
               title={t("pricing.4_card.title")}
-              description={t("pricing.1_card.description")}
+              description={t("pricing.4_card.description")}
               price={t("pricing.4_card.price")}
             />
           </Box>
