@@ -209,7 +209,7 @@ const Pricing = () => {
             "coach explains swimming technique to a teenager by the pool "
           }
           title={t("pricing.4_card.title")}
-          description={t("pricing.1_card.description")}
+          description={t("pricing.4_card.description")}
           price={t("pricing.4_card.price")}
         />
       </motion.div>

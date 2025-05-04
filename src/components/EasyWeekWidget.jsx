@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export const EasyWeekWidget = () => {
+  const { i18n } = useTranslation();
+
   useEffect(() => {
     const handleMessage = (e) => {
       if (/(easyweek|eswk)\./.test(e.origin) && e.data?.type === "redirect") {
@@ -13,6 +16,16 @@ export const EasyWeekWidget = () => {
       window.removeEventListener("message", handleMessage);
     };
   }, []);
+
+  const language = i18n.language;
+
+  const widgetUrls = {
+    en: "https://storage2.easyweek.io/build/booking.easyweek.io/v1.1.1/assets/en.json",
+    ru: "https://storage2.easyweek.io/build/booking.easyweek.io/v1.1.1/assets/ru.json",
+    lv: "https://storage2.easyweek.io/build/booking.easyweek.io/v1.1.1/assets/lv.json",
+  };
+
+  const widgetUrl = widgetUrls[language] || widgetUrls["lv"];
 
   // useEffect(() => {
   //   const script = document.createElement("script");
@@ -35,6 +48,7 @@ export const EasyWeekWidget = () => {
   return (
     <div>
       <iframe
+        // src={widgetUrl}
         src="https://booking.easyweek.lv/sia-baka-rini"
         style={{ border: 0, maxWidth: "100%" }}
         frameBorder="0"

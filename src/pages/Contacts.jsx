@@ -66,7 +66,7 @@ const Contacts = () => {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/?flo=true"
+                href="https://www.instagram.com/ruslan_sereda_/"
                 className="text-lg text-gray-900 hover:text-pink-600 transition-color duration-300 flex inline-flex items-center gap-2"
                 target="_blank"
               >
