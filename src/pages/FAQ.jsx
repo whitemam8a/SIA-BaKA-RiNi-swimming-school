@@ -42,6 +42,18 @@ const FAQ = () => {
           title={t("faq.4_question.question")}
           description={t("faq.4_question.answer")}
         />
+        <FAQBlock
+          title={t("faq.5_question.question")}
+          description={
+            <Trans
+              i18nKey="faq.5_question.answer"
+              components={{
+                ul: <ul className="pl-5 list disc my-4" />,
+                li: <li className="mb-2" />,
+              }}
+            />
+          }
+        />
       </div>
     </div>
   );

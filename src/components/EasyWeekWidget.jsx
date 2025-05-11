@@ -19,13 +19,11 @@ export const EasyWeekWidget = () => {
 
   const language = i18n.language;
 
-  const widgetUrls = {
-    en: "https://storage2.easyweek.io/build/booking.easyweek.io/v1.1.1/assets/en.json",
-    ru: "https://storage2.easyweek.io/build/booking.easyweek.io/v1.1.1/assets/ru.json",
-    lv: "https://storage2.easyweek.io/build/booking.easyweek.io/v1.1.1/assets/lv.json",
-  };
+  const baseUrl = "https://booking.easyweek.lv/sia-baka-rini";
 
-  const widgetUrl = widgetUrls[language] || widgetUrls["lv"];
+  const widgetUrl = `${baseUrl}?lang=${language}`;
+
+  // const widgetUrl = widgetUrls[language] || widgetUrls["lv"];
 
   // useEffect(() => {
   //   const script = document.createElement("script");

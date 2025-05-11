@@ -10,7 +10,7 @@
   "first_screen": {
     "title": "Pirmie soļi peldēšanas pasaulē",
     "subtitle": "Pieraksti savu bērnu pirmajai nodarbībai un atklāj viņa potenciālu ūdenī ar <1>50% atlaidi</1>",
-    "button": "Reģistrējieties mācībām"
+    "button": "Reģistrējieties vienreizējai sesijai"
   },
   "features": {
     "why_we": "KĀPĒC MĒS?",
@@ -98,6 +98,10 @@
     "4_question": {
       "question": "Drošība treniņos",
       "answer": "Mūsu peldēšanas skolā bērnu drošība ir pirmajā vietā. Visas nodarbības vada kvalificēti treneri ar pieredzi darbā ar bērniem, nodrošinot komfortu un drošību ūdenī. Mēs izmantojam modernu aprīkojumu un uzturam baseinu tīru un higiēnisku. Mazajiem bērniem nodarbības notiek seklā ūdenī, bet iesācējiem ir pieejami palīglīdzekļi. Grupas tiek veidotas pēc vecuma un sagatavotības līmeņa, lai katrs bērns saņemtu uzmanību un atbalstu. Pirms nodarbībām treneri sniedz drošības instrukcijas un māca drošības noteikumus ūdenī — tas noderēs arī ārpus nodarbībām. Mēs rūpējamies par to, lai bērni justos droši un ar prieku apgūtu peldēšanu."
+    },
+    "5_question": {
+      "question": "Kā atcelt vai mainīt nodarbību?",
+      "answer": "Pēc rezervācijas jūs varat: <ul><li>- mainīt vai atcelt nodarbību uzreiz uznirstošajā logā (pirms tā aizvēršanas)</li><li>- izmantot saiti, kas nosūtīta uz jūsu e-pastu</li><li>- sazināties ar administratoru, izmantojot veidlapu mājaslapā vai sociālajos tīklos</li></ul>"
     }
   },
   "contact_form": {
