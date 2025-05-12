@@ -16,7 +16,7 @@ const FAQ = () => {
       </h2>
 
       {/* Контейнер для вопросов */}
-      <div className="w-full max-w-4xl px-4 space-y-6 md:space-y-8">
+      <div className="w-full max-w-4xl px-4 space-y-4 md:space-y-4">
         <FAQBlock
           title={t("faq.1_question.question")}
           description={
@@ -48,8 +48,10 @@ const FAQ = () => {
             <Trans
               i18nKey="faq.5_question.answer"
               components={{
-                ul: <ul className="pl-5 list disc my-4" />,
-                li: <li className="mb-2" />,
+                p: <p className="mb-4" />,
+
+                // ul: <ul className="pl-5 list disc my-4" />,
+                // li: <li className="mb-2" />,
               }}
             />
           }

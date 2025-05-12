@@ -101,7 +101,7 @@
     },
     "5_question": {
       "question": "How can I cancel or reschedule a training?",
-      "answer": "After booking, you can: <ul><li>- reschedule or cancel the session directly in the modal window (before it is closed)</li><li>- use the link provided in the confirmation email</li><li>- contact the administrator via the website form or on social media</li></ul>"
+      "answer": "<p>If you want to change or cancel your booking immediately after filling out the “Sign up for a class” form, you can do so in the same modal window. Just click the “View Booking” button. On the next page, you will see two buttons — “Edit” and “Cancel”.</p><p>If, for any reason, you won’t be able to bring your child to the scheduled class, we kindly ask you to inform us in advance (at least 24 hours before the class). You can cancel or reschedule the class by following the link in the confirmation email sent to you. You can also contact us via the “Contact us” form on our website or call us at the phone number provided (+371 2855 5681).</p>"
     }
   },
   "contact_form": {

@@ -101,7 +101,7 @@
     },
     "5_question": {
       "question": "Kā atcelt vai mainīt nodarbību?",
-      "answer": "Pēc rezervācijas jūs varat: <ul><li>- mainīt vai atcelt nodarbību uzreiz uznirstošajā logā (pirms tā aizvēršanas)</li><li>- izmantot saiti, kas nosūtīta uz jūsu e-pastu</li><li>- sazināties ar administratoru, izmantojot veidlapu mājaslapā vai sociālajos tīklos</li></ul>"
+      "answer": "<p>Ja pēc pieteikuma formas “Pieteikties nodarbībai” aizpildīšanas vēlaties mainīt vai atcelt rezervāciju, to var izdarīt tajā pašā logā. Vienkārši noklikšķiniet uz pogas “Skatīt rezervāciju”. Atvērtajā lapā būs pieejamas divas pogas — “Mainīt” un “Atcelt”.</p><p>Ja kādu iemeslu dēļ nevarēsiet atvest bērnu uz plānoto nodarbību, lūdzam mūs par to informēt savlaicīgi (ne vēlāk kā 24 stundas pirms nodarbības). Atcelt vai pārcelt nodarbību var, izmantojot saiti e-pasta vēstulē, kuru saņēmāt kā rezervācijas apstiprinājumu. Tāpat varat mums rakstīt, izmantojot formu “Sazinieties ar mums” mūsu mājaslapā, vai zvanīt uz norādīto tālruņa numuru (+371 2855 5681).</p>"
     }
   },
   "contact_form": {
